@@ -24,3 +24,6 @@ Notes:
 In Home Page, Just 'Nowhere' movie link can be opened. (Till I build the backend)
 In 'Nowhere' movie page, 'Cast & Crew' tab, just 'Anna Castillo' actor can be opened. (Till I build the backend)
 Any link starts with '#' sign, will be updated after complete the website with backend stack.
+
+
+To Move TO Home Page: https://linamouselli.github.io/LMovies/Welcome%20-%20LMovies.html
