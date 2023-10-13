@@ -1222,6 +1222,10 @@ hr {
 	clip: auto
 }
 
+.sr-only:hover{
+	color:rgb(109, 82, 103);
+}
+
 .h1,
 .h2,
 .h3,
@@ -5096,21 +5100,24 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default .navbar-toggle {
-	border-color: #ddd
+	border-color: black;
 }
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-	background-color: #ddd
+	background-color: rgb(211, 197, 209);
+	color:black;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #888
+	background-color: #888;
+	color:rgb(109, 82, 103);
 }
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-	border-color: #0d1313
+	border-color: #0d1313;
+	color:rgb(109, 82, 103);
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -5216,7 +5223,8 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
-	background-color: #333
+	background-color: #333;
+	color: rgb(109, 82, 103);
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -8743,11 +8751,13 @@ body.dragging {
 }
 
 .main_navigation .navbar-header .navbar-toggle:hover {
-	background-color: black;
+	background-color: rgb(109, 82, 103);
+	color:black;
 }
 
 .main_navigation .navbar-header .navbar-toggle .icon-bar {
-	background-color: black
+	background-color: black;
+	color:rgb(109, 82, 103);
 }
 
 .main_navigation .navbar-header .mobile-search {
@@ -8762,7 +8772,8 @@ body.dragging {
 }
 
 .main_navigation .navbar-header .mobile-search:hover {
-	background-color: black;
+	background-color: rgb(211, 197, 209);
+	color:black;
 }
 
 .main_navigation .navbar-nav li a {
