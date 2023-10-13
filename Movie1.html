@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>Nowhere - LMovies DB</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="max-image-preview:large" />
+		<meta name="csrf-token" content="YdQBMsZBFrdvRYNPI6wsILC61nucNr6xLvJ3i3lp" />
+		<link rel="icon" type="image/png" href="Welcome_files/Icon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="Welcome_files/app-96ac6ead57.css" />
+		<link rel="stylesheet" href="Welcome_files/all-b2a0e80364.css" />
+		<link rel="stylesheet" href="Welcome_files/bootstrap-select.min.css" />
+		<link href="Welcome_files/css.css" rel="stylesheet" type="text/css" />
+		<link href="Welcome_files/css_002.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="Welcome_files/font-awesome.min.css" />
+		<meta
+			http-equiv="origin-trial"
+			content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+		/>
+	</head>
+	<body id="app">
+		<div class="navbar navbar-default main_navigation" role="navigation">
+			<div class="container">
+				<div style="display:flex">
+					<div>
+						<a href="Welcome%20-%20LMovies.html" class="navbar-brand"><img alt="LMovies Logo" src="Welcome_files/LMovies_Logo.png" /></a>
+					</div>
+					<div style="flex-grow: 3">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<div class="collapse navbar-collapse">
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Discover</a>
+										<ul class="dropdown-menu">
+											<li><a href="on-today.html">On Today</a></li>
+											<li><a href="companies.html">Companies</a></li>
+											<li><a href="lists.html">Lists</a></li>
+											<li><a href="people.html">People</a></li>
+											<li><a href="taxonomy.html">Tagging &amp; Taxonomy</a></li>
+										</ul>
+									</li>
+									<li><a href="About.html">About</a></li>
+									<li><a href="Contact_Us.html" target="_blank">Contact Us</a></li>
+
+									<li class="dropdown hidden-sm hidden-md hidden-lg showauth-user">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-plus-circle" aria-hidden="true" style="margin-right:10px"></i> Add A Record </a>
+										<ul class="dropdown-menu">
+											<li><a href="#series/create">Add Series</a></li>
+											<li><a href="#movies/create">Add Movie</a></li>
+											<li><a href="#people/create">Add Person</a></li>
+										</ul>
+									</li>
+									<li class="dropdown hidden-sm hidden-md hidden-lg showauth-user">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-circle" aria-hidden="true" style="margin-right:10px"></i> Account </a>
+										<ul class="dropdown-menu">
+											<li><a href="#dashboard">Dashboard</a></li>
+											<li><a href="#dashboard/notifications">Notifications</a></li>
+											<li><a href="#subscribe">Subscribe</a></li>
+											<li><a href="#dashboard/favorites/series">Favorite Series</a></li>
+											<li><a href="#dashboard/favorites/movies">Favorite Movies</a></li>
+											<li><a href="#logout">Logout</a></li>
+										</ul>
+									</li>
+
+									<li class="hidden-lg hidden-md hidden-sm">
+										<a href="#auth/login?redirect=/"><i class="fa fa-user-circle" aria-hidden="true" style="margin-right:10px"></i> Login</a>
+									</li>
+								</ul>
+							</div>
+
+							<a href="#search" class="mobile-search hidden-sm hidden-md hidden-lg"><i class="fa fa-search" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="hidden-xs">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="hidden-md hidden-lg">
+								<a href="#search"><i class="fa fa-search" aria-hidden="true"></i></a>
+							</li>
+							<li class="dropdown showauth-user">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Add A Record">
+									<i class="fa fa-plus-circle" aria-hidden="true"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#series/create">Add Series</a></li>
+									<li><a href="#movies/create">Add Movie</a></li>
+									<li><a href="#people/create">Add Person</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown showauth-user">
+								<a href="#" class="dropdown-toggle user-menu" data-toggle="dropdown">
+									<i class="fa fa-user-circle" aria-hidden="true"></i>
+									<span id="notification-icon"><i class="hidden" aria-hidden="true"></i></span>
+								</a>
+
+								<ul class="dropdown-menu">
+									<li><a href="#dashboard">Dashboard</a></li>
+									<li>
+										<a href="#dashboard/notifications">
+											Notifications <span id="notification-indicator"><span class="badge active"></span></span>
+										</a>
+									</li>
+									<li><a href="#subscribe">Subscribe</a></li>
+									<li><a href="#dashboard/favorites/series">Favorite Series</a></li>
+									<li><a href="#dashboard/favorites/movies">Favorite Movies</a></li>
+									<li><a href="#logout">Logout</a></li>
+								</ul>
+							</li>
+
+							<li class="">
+								<a href="Login.html">Login</a>
+							</li>
+						</ul>
+
+						<form action="/search" method="get" class="navbar-form navbar-left hidden-xs hidden-sm" autocomplete="off">
+							<input type="text" name="query" class="form-control" placeholder="Search LMovies DB" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" style="height: auto !important;">
+			<div class="flash-message"></div>
+			<div class="row mt-2">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+                    <img src="Movie1_files/6505e00967cc5.jpg" class="img-responsive img-rounded img-mobile-centered" />
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 col-xl-10">
+                    <h1 class="translated_title mt-0" id="series_title">Nowhere</h1>
+                    <div class="block" id="translations">
+                        <div class="change_translation_text" data-language="spa" data-title="Nowhere" style="display: none;">
+                            <p>
+                                Mía es una mujer embarazada que, junto a su marido, huye de un país totalitario escondida en un contenedor marítimo. Tras ser forzosamente separados, deberá luchar por su supervivencia cuando una violenta tormenta la
+                                arroja al mar. Sola y a la deriva en mitad del océano, Mía se enfrentará a todo para salvar la vida de su hija y reencontrarse con su pareja.
+                            </p>
+                        </div>
+                        <div class="change_translation_text" data-language="eng" data-title="Nowhere" style="">
+                            <p>
+                                A young pregnant woman named Mia escapes from a country at war by hiding in a maritime container aboard a cargo ship. After a violent storm, Mia gives birth to the child while lost at sea, where she must fight to
+                                survive.
+                            </p>
+                        </div>
+                        <div class="change_translation_text" data-language="fra" data-title="Nowhere" style="display:none">
+                            <p>Une femme enceinte, seule et prisonnière d'un conteneur à la dérive, tente de survivre après avoir fui un pays totalitaire dévasté.</p>
+                        </div>
+                        <div class="change_translation_text" data-language="pt" data-title="Destinos à Deriva" style="display:none">
+                            <p>
+                                Uma jovem grávida chamada Mia escapa de um país em guerra, escondendo-se em um contêiner marítimo a bordo de um navio de carga. Após uma violenta tempestade, Mia dá à luz a criança perdida no mar, onde deve lutar
+                                para sobreviver.
+                            </p>
+                        </div>
+                        <div class="change_translation_text" data-language="pol" data-title="Nigdzie" style="display:none">
+                            <p>Historia kobiety w ciąży, która ucieka z zniszczonego kraju przez przeludnienie i brak zasobów. Podczas jej lotu burza wyrzuca do morza kontener, w którym podróżuje. Od tego momentu zaczyna walczyć o przetrwanie.</p>
+                        </div>
+                        <div class="change_translation_text" data-language="tur" data-title="Nowhere" style="display:none">
+                            <p>Harap hâldeki totaliter bir ülkeden kaçarken denizin ortasında sürüklenen bir konteynere hapsolan hamile ve yalnız bir kadın hayatta kalma mücadelesi verir.</p>
+                        </div>
+                        <div class="change_translation_text" data-language="zhtw" data-title="無處逢生" style="display:none">
+                            <p>懷有身孕的女子逃離慘遭極權暴政摧殘的國家後，卻困在原本用來藏身的貨櫃裡，隻身一人漂流在汪洋中，只能拚命求生。</p>
+                        </div>
+        
+                        <div>
+                            <span class="label change_translation label-default" data-toggle="tooltip" title="" data-language="spa" data-original-title="Spanish">español</span>
+                            <span class="label change_translation label-info" data-toggle="tooltip" title="" data-language="eng" data-original-title="English">English</span>
+                            <span class="label label-default change_translation" data-toggle="tooltip" title="" data-language="fra" data-original-title="French">français</span>
+                            <span class="label label-default change_translation" data-toggle="tooltip" title="" data-language="pt" data-original-title="Portuguese - Brazil">Português - Brasil</span>
+                            <span class="label label-default change_translation" data-toggle="tooltip" title="" data-language="pol" data-original-title="Polish">język polski</span>
+                            <span class="label label-default change_translation" data-toggle="tooltip" title="" data-language="tur" data-original-title="Turkish">Türkçe</span>
+                            <span class="label label-default change_translation" data-toggle="tooltip" title="" data-language="zhtw" data-original-title="Chinese - Taiwan">臺灣國語</span>
+                        </div>
+                    </div>
+                </div>
+			</div>
+            <div style="height: auto !important;">
+                <div class="tvdb-tabs mt-2" role="tablist">
+                    <div role="presentation" class="active"><a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a></div>
+                    <div role="presentation"><a href="#castcrew" aria-controls="castcrew" role="tab" data-toggle="tab">Cast &amp; Crew</a></div>
+                </div>
+            </div>
+            <div class="tab-content" style="height: auto !important;">
+                <div role="tabpanel" class="tab-pane active" id="general" style="height: auto !important;">
+                    <div class="block" id="series_basic_info">
+                        <ul class="list-group">
+                            <li class="list-group-item clearfix">
+                                <strong>Status</strong>
+                                <span>Released</span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Released</strong>
+                                <span>
+                                    <small class="text-muted">Worldwide</small>
+                                    September 29, 2023
+                                </span>
+                                <span>
+                                    <small class="text-muted">Spain</small>
+                                    September 29, 2023
+                                </span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Content Rating</strong>
+                                <span>
+                                    <small class="text-muted">Spain</small>
+                                    16
+                                </span>
+                                <span>
+                                    <small class="text-muted">Turkey</small>
+                                    16+
+                                </span>
+                                <span>
+                                    <small class="text-muted">United States of America</small>
+                                    TV-MA
+                                </span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Runtime</strong>
+                                <span>109 minutes</span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Genres</strong>
+                                <span><a href="genre.html">Drama</a></span>
+                                <span><a href="genre.html">Thriller</a></span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Original Country</strong>
+                                <span>Spain</span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Original Language</strong>
+                                <span>Spanish</span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Spoken Languages</strong>
+                                <span>Spanish</span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Network</strong>
+                                <span>
+                                    <a href="companies.html">Netflix</a>
+                                </span>
+                            </li>
+                            <li class="list-group-item clearfix">
+                                <strong>Studio</strong>
+                                <span>
+                                    <a href="companies.html">Netflix Studios</a>
+                                </span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Production Countries</strong>
+                                <span>Spain</span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Trailers</strong>
+                                <span>
+                                    <small class="text-muted">Spanish</small>
+                                    <a href="https://www.youtube.com/watch?v=Gl-T2Iw-kiM" class="ml-1">Trailer</a>
+                                </span>
+                                <span>
+                                    <small class="text-muted">English</small>
+                                    <a href="https://www.youtube.com/watch?v=KDUtdcU10YA" class="ml-1">Trailer</a>
+                                </span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>On Other Sites</strong>
+                                <span><a href="https://www.imdb.com/title/tt15789472/">IMDB</a></span>
+                                <span><a href="https://www.netflix.com/title/81449034">Official Website</a></span>
+                                <span><a href="https://www.themoviedb.org/movie/1151534">TheMovieDB.com</a></span>
+                                <span><a href="https://en.wikipedia.org/wiki/Nowhere_(2023_film)">Wikipedia</a></span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Box Office</strong>
+                                <span>
+                                    <small class="text-muted">Worldwide</small>
+                                    $0
+                                </span>
+                                <span>
+                                    <small class="text-muted">US</small>
+                                    $0
+                                </span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Favorited</strong>
+                                <span>This movie has been favorited by 2 people.</span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Created</strong>
+                                <span>
+                                    July 14, 2023 by
+                                    <div class="user-inline" style="display: inline-block">
+                                        tbrenne
+                                    </div>
+                                </span>
+                            </li>
+    
+                            <li class="list-group-item clearfix">
+                                <strong>Modified</strong>
+                                <span>
+                                    October 7, 2023 by
+                                    <div class="user-inline" style="display: inline-block">
+                                        E. Monroe
+                                    </div>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="embed-responsive embed-responsive-16by9 mt-4">
+                        <iframe class="embed-responsive-item" src="Movie1_files/KDUtdcU10YA.html" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="castcrew">
+                    <ul class="nav nav-pills mb-1">
+                        <li role="presentation" class="active">
+                            <a href="#people-actor" data-toggle="pill"> Cast <span class="badge">8</span> </a>
+                        </li>
+    
+                        <li role="presentation">
+                            <a href="#people-director" data-toggle="pill"> Director <span class="badge">1</span> </a>
+                        </li>
+                    </ul>
+    
+                    <div class="tab-content">
+                        <div role="tabpanel" id="people-actor" class="tab-pane fade in active">
+                            <div class="row thumbnail-mousey">
+                                <div class="col-xs-6 col-sm-3 col-lg-2">
+                                    <a href="movie1/people1.html">
+                                        <div class="thumbnail">
+                                            <h3>
+                                                Anna Castillo<br />
+                                                <small>
+                                                    as Mia
+                                                </small>
+                                            </h3>
+                                            <img class="lazy media-object img-responsive img-rounded" src="Movie1_files/People/6521c3d69b669.jpg" style="display: block;" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-lg-2">
+                                    <a href="movie1/people2.html">
+                                        <div class="thumbnail">
+                                            <h3>
+                                                Tamar Novas<br />
+                                                <small>
+                                                    as Nico
+                                                    <br />
+                                                    <span class="text-danger">* needs role-specific image</span>
+                                                </small>
+                                            </h3>
+                                            <img class="lazy media-object img-responsive img-rounded" src="Movie1_files/People/651b25d9da3fe.jpg" style="display: block;" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-lg-2">
+                                    <a href="movie1/people3.html">
+                                        <div class="thumbnail">
+                                            <h3>
+                                                Irina Bravo<br />
+                                                <small>
+                                                    as Angela
+                                                    <br />
+                                                    <span class="text-danger">* needs role-specific image</span>
+                                                </small>
+                                            </h3>
+                                            <img class="lazy media-object img-responsive img-rounded" src="Movie1_files/People/651b26845ee7e.jpg" style="display: block;" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-lg-2">
+                                    <a href="movie1/people4.html">
+                                        <div class="thumbnail">
+                                            <h3>
+                                                Victoria Teijeiro<br />
+                                                <small>
+                                                    as Vicky
+                                                    <br />
+                                                    <span class="text-danger">* needs role-specific image</span>
+                                                </small>
+                                            </h3>
+                                            <img class="lazy media-object img-responsive img-rounded" src="Movie1_files/People/651b2761061fd.jpg" style="display: block;" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-lg-2">
+                                    <a href="movie1/people5.html">
+                                        <div class="thumbnail">
+                                            <h3>
+                                                Mariam Torres<br />
+                                                <small>
+                                                    as Lucía
+                                                    <br />
+                                                    <span class="text-danger">* needs role-specific image</span>
+                                                </small>
+                                            </h3>
+                                            <img class="lazy media-object img-responsive img-rounded" src="Movie1_files/People/6408c9d57ce59.jpg" style="display: block;" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-lg-2">
+                                    <a href="movie1/people6.html">
+                                        <div class="thumbnail">
+                                            <h3>
+                                                Mary Ruiz<br />
+                                                <small>
+                                                    as Sandra
+                                                    <br />
+                                                    <span class="text-danger">* needs role-specific image</span>
+                                                </small>
+                                            </h3>
+                                            <img class="lazy media-object img-responsive img-rounded" src="Movie1_files/People/65214a88e4ece.jpg" style="display: block;" />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div role="tabpanel" id="people-director" class="tab-pane fade in">
+                            <table class="table table-bordered table-hover table-responsive">
+                                <tbody>
+                                    <tr>
+                                        <th width="75%">Name</th>
+                                        <th width="25%"></th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="movie1/people7.html">Albert Pintó</a></td>
+                                        <td>
+                                            <a href="movies/347900-nowhere/people/68977940/remove" data-permission="seriespeople-68977940-delete" class="confirm"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3">
+						<h5>Discover</h5>
+						<ul class="list-unstyled">
+							<li><a href="on-today.html">On Today</a></li>
+							<li><a href="awards.html">Awards</a></li>
+							<li><a href="companies.html">Companies</a></li>
+							<li><a href="lists.html">Lists</a></li>
+							<li><a href="people.html">People</a></li>
+							<li><a href="taxonomy.html">Taxonomy</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<h5>About</h5>
+						<ul class="list-unstyled">
+							<li><a href="About.html">About LMovies</a></li>
+							<li><a href="api-information">API</a></li>
+							<li><a href="Contact_Us.html">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<h5>Legal</h5>
+						<ul class="list-unstyled">
+							<li><a href="tos.html">Terms of Service</a></li>
+							<li><a href="privacy-policy.html">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<h5>Follow Us</h5>
+						<a target="_blank" href="https://www.facebook.com/TheTVDB" class="footer-social">
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-xs-12">
+						<a href="Welcome%20-%20LMovies.html"><img alt="LMovies.com" src="Welcome_files/Footer.PNG" class="footer-logo" height="40" /></a>
+						© 2023 LMovies.com ®. ALL RIGHTS RESERVED.
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			window.auth = '';
+			            window.auth_language = 'eng';
+			    window.user_unique = null;
+		</script>
+		<!-- Polyfill only included to allow IE11 to use search. Remove this in 2025 -->
+		<script src="Welcome_files/polyfill.min.js"></script>
+		<script src="Welcome_files/instantsearch.js@3.5.3"></script>
+		<script src="Welcome_files/algoliasearchLite.min.js"></script>
+		<script src="Welcome_files/vendor-28929ee939.js"></script>
+		<iframe style="width: 0px; height: 0px; border: medium; z-index: -1000; left: -1000px; top: -1000px; display: none;" name="googlefcPresent"></iframe>
+		<script src="Welcome_files/autocomplete.jquery.min.js"></script>
+		<script src="Welcome_files/bootstrap-select.min.js"></script>
+
+		<script src="Welcome_files/react.production.min.js" crossorigin=""></script>
+		<script src="Welcome_files/react-dom.production.min.js" crossorigin=""></script>
+		<script src="Welcome_files/NotificationIndicator-905ffe2297.js"></script>
+		<script src="Welcome_files/NotificationIcon-e8c973a511.js"></script>
+		<script src="Welcome_files/Comments-c3614503e2.js"></script>
+		<script src="Welcome_files/PinnedComments-e4d532f3d0.js"></script>
+		<script src="Welcome_files/Trending-d57b0aab2d.js"></script>
+	</body>
+</html>
