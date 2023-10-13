@@ -5327,7 +5327,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 	line-height: 1.42857143;
 	text-decoration: none;
 	color: black;
-	border: 1px solid #2F4D4F
+	border: 1px solid black
 }
 
 .pagination>li:first-child>a,
@@ -5348,8 +5348,8 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .pagination>li>span:focus,
 .pagination>li>span:hover {
 	color: black;
-	background-color: #2F4D4F;
-	border-color: #2F4D4F
+	background-color: black;
+	border-color: black
 }
 
 .pagination>.active>a,
@@ -5371,9 +5371,9 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .pagination>.disabled>span,
 .pagination>.disabled>span:focus,
 .pagination>.disabled>span:hover {
-	color: #2F4D4F;
+	color: black;
 	background-color: rgb(109, 82, 103);
-	border-color: #2F4D4F;
+	border-color: black;
 	cursor: not-allowed
 }
 
@@ -5424,7 +5424,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .pager li>span {
 	display: inline-block;
 	background-color: rgb(109, 82, 103);
-	border: 1px solid #2F4D4F;
+	border: 1px solid black;
 	border-radius: 15px
 }
 
@@ -5453,7 +5453,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 .pager .disabled>a:focus,
 .pager .disabled>a:hover,
 .pager .disabled>span {
-	color: #2F4D4F;
+	color: black;
 	background-color: rgb(109, 82, 103);
 	cursor: not-allowed
 }
@@ -6085,7 +6085,7 @@ a.list-group-item-danger.active:hover {
 
 .panel {
 	margin-bottom: 21px;
-	background-color: #2F4D4F;
+	background-color: black;
 	border: 1px solid transparent;
 	border-radius: 4px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
@@ -7712,13 +7712,13 @@ strike.straight::before {
 
 .btn-info:active,
 .btn-success:active {
-	color: #2f4d4f;
+	color: black;
 	background-color: #56AA74
 }
 
 .btn-info:disabled,
 .btn-success:disabled {
-	color: #2f4d4f;
+	color: black;
 	background-color: black;
 	opacity: .5
 }
@@ -7985,7 +7985,7 @@ strike.straight::before {
 }
 
 .comments .commentGroup .comment h4 span.avatar .fa-circle {
-	color: #2f4d4f
+	color: black;
 }
 
 .comments .commentGroup .comment h4 .label {
@@ -8188,7 +8188,7 @@ strike.straight::before {
 
 .label-subdued {
 	color: #a8b3a8;
-	background-color: #2f4d4f;
+	background-color: black;
 	font-weight: 400
 }
 
@@ -8523,7 +8523,7 @@ strike.straight::before {
 
 #personmerge #personsearch-results ol.ais-Hits-list li.ais-Hits-item .personsearch-result.selected {
 	border: 3px solid #478f95;
-	background-color: #2f4d4f
+	background-color: black;
 }
 
 .tvtime-cta {
@@ -8551,7 +8551,7 @@ strike.straight::before {
 }
 
 .alert.alert-slate {
-	background-color: #2f4d4f;
+	background-color: black;;
 	border: 1px solid #3c6365;
 	color: black
 }
@@ -8743,7 +8743,7 @@ body.dragging {
 }
 
 .main_navigation .navbar-header .navbar-toggle:hover {
-	background-color: #2f4d4f
+	background-color: black;
 }
 
 .main_navigation .navbar-header .navbar-toggle .icon-bar {
@@ -8762,7 +8762,7 @@ body.dragging {
 }
 
 .main_navigation .navbar-header .mobile-search:hover {
-	background-color: #2f4d4f
+	background-color: black;
 }
 
 .main_navigation .navbar-nav li a {
@@ -8830,7 +8830,7 @@ TH {
 }
 
 TABLE.table-colored {
-	background-color: #2f4d4f;
+	background-color: black;;
 	border: 1px solid #3c6365
 }
 
@@ -8959,7 +8959,7 @@ TABLE.search_results TR.subset TD:first-child {
 
 .nav-pills>li.active {
 	font-weight: 700;
-	color: #2f4d4f
+	color: black
 }
 
 .nav-pills>li.active .badge {
@@ -8969,12 +8969,12 @@ TABLE.search_results TR.subset TD:first-child {
 
 .nav-pills>li.active a {
 	background-color: white;
-	color: #2F4D4F
+	color: black
 }
 
 .nav-pills>li.active a:focus,
 .nav-pills>li.active a:hover {
-	color: #2F4D4F
+	color: black
 }
 
 .nav-pills>li.active a:focus .badge,
@@ -9005,7 +9005,7 @@ TABLE.search_results TR.subset TD:first-child {
 .nav-pills>li.pull-right .btn:focus,
 .nav-pills>li.pull-right .btn:hover {
 	background-color: #88dda6;
-	color: #2f4d4f
+	color: black
 }
 
 .nav-pills.seasontype {
@@ -9109,7 +9109,7 @@ FIELDSET.noformat {
 }
 
 .page-toolbox .open .dropdown-toggle.btn-success {
-	color: #2f4d4f !important;
+	color: black !important;
 	background-color: black !important
 }
 
@@ -9223,7 +9223,7 @@ FIELDSET.noformat {
 
 .toolbox .btn {
 	font-size: 16px;
-	background-color: #2F4D4F;
+	background-color: black;
 	color: white;
 	border: none;
 	white-space: normal;
@@ -9232,7 +9232,7 @@ FIELDSET.noformat {
 
 .toolbox .btn:hover {
 	background-color: white;
-	color: #2F4D4F
+	color: black
 }
 
 .toolbox .dropdown-menu {
@@ -9245,7 +9245,7 @@ FIELDSET.noformat {
 }
 
 .fancybox-skin {
-	background-color: #2F4D4F !important;
+	background-color: black !important;
 	color: white !important
 }
 
